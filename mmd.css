@@ -440,4 +440,50 @@ li{list-style-type: none;}
     .footer-c{
         height: 300px;
     }
+
+}
+
+
+@media screen and (max-width:450px) {
+    /*start-navbar*/
+
+    .container .navbar-1 {
+        width:100%;
+        
+        margin: 0;
+        position:fixed;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+
+    .container .navbar-1 div {
+        padding: 0 20px ;
+    }
+
+    section {
+        display: none;
+    }
+
+    .information-container {
+        margin-right:150px;
+    }
+
+    .product {
+        margin-right:90px;
+    }
+
+    .subset-img{
+        margin-right: 80px;
+    }
+
+    .footer-c {
+        margin-right: 90px;
+        padding: 10px;
+    }
+
+    .footer {
+        margin-right: 85px;
+    }
+ 
 }

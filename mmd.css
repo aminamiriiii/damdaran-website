@@ -1,0 +1,340 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family:Arial, Helvetica, sans-serif;}
+
+html{overflow-x: hidden;   }
+
+
+a{text-decoration: none;}
+li{list-style-type: none;}
+
+.container nav{
+    position:fixed;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    padding: 30px 10px;
+    background-color:#eeeeee8e;
+    height: 69px;
+    z-index: 1;
+    border-bottom: 1px solid #dbdbdb;}
+
+.container nav a {
+    padding: 0 20px;
+    color: black;}
+
+.container nav a:hover{
+    color: green;}
+
+
+/* start border for bottom in links!!!!!!!!!!!!!!*/ 
+.container nav .m-1:hover:before{
+    position:fixed;
+    content: "";
+    width: 58px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+.container nav .m-2:hover:before{
+    position: fixed;
+    content: "";
+    width: 45px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+.container nav .m-3:hover:before{
+    position:fixed;
+    content: "";
+    width: 58px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+.container nav .m-4:hover:before{
+    position: fixed;
+    content: "";
+    width: 28px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+.container nav .m-5:hover:before{
+    position:fixed;
+    content: "";
+    width: 72px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+.container nav .m-6:hover:before{
+    position:fixed;
+    content: "";
+    width: 55px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+.container nav .m-7:hover:before{
+    position:fixed;
+    content: "";
+    width: 88px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+
+.container nav .m-8:hover:before{
+    position:fixed;
+    content: "";
+    width: 78px;
+    height: 2px;
+    top:65px;
+    background-color: green;}
+
+/*end-for-bottom-border-in-links!!!!!!!!!!!!!!!!!!!!!*/
+
+.container nav img {
+    position:relative;
+    z-index: 1;}
+
+.container section img {
+    position:relative;
+    width: 100%;
+    top: -20px;}
+
+/*end-navbar*/
+/*start-for-history*/
+
+
+.history .h-container{
+    padding: 0 300px;
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    color: white;
+    position: relative;
+    top: -23px;
+    width:100%;
+    height: 80px;
+    background-color: #084989;}
+
+.history a {
+    padding: 20px;
+    color: white;
+    border-right: 1px solid #eeeeee51;}
+
+.history .history-3 a:hover{
+    transition:all .2s ease ;
+    color: #5f5fff;}
+
+.history .history-4 a:hover{
+    transition:all .2s ease;
+    color: #5f5fff;}
+
+/*end-for-history!!!!!!*/
+
+/*start-for-information*/
+.information-container{
+    direction: ltr;
+    padding: 100px 140px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);}
+
+.information-container .information h2{
+    font-weight: 700;
+    font-family: sans-serif;
+    font-size: 2rem;}
+
+.information-container .information  p {
+    font-size: 1.2rem;
+    color:#666666;}
+
+.information-container .information button {
+    width:130px;
+    height:35px;
+    position: relative;
+    right: 200px;
+    border: none;
+    background-color:white;
+    box-shadow: 0px 0px 3px 4px rgba(0,0,0,0.1);
+    font-size: 1rem;
+    cursor: pointer;
+    color: #084989;
+    border-radius: 1.5px;}
+
+.information-container .information button:hover {
+    color: white;
+    background-color: #084989;
+    transition: all .5s ease;}
+
+/*end-for-information!!!!!!!!*/
+
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: #084989;
+    height: 300px;}
+
+.product img {
+    width: 100%;
+    height: 300px;}
+
+.product a {
+    background-color:white;
+    padding: 7px 35px;
+    color:#084989;
+    border-radius: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px 2px 4px rgba(0,0,0,0.1);}
+
+ .product-1:hover a {
+    box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+    width: 120px;
+    height: 30px;
+    background-color: #084989;
+    color: white;}
+
+ .product-2:hover a {
+    box-shadow: 0px 0px 0px 4px rgba(0,0,0,0.1);
+    width: 120px;
+    height: 30px;
+    background-color: #084989;
+    color: white;}
+
+.product img:hover {
+    transition: all ease .5s;
+    transform: scale(1.1,1);}
+
+/*end-product!!!!!!!*/
+/*start subset !!!!!!!*/
+.subset {
+    width: 65%; 
+    margin: auto;
+    display: flex;
+    justify-content: space-between;}
+
+.subset h2 {
+    color: rgb(89, 89, 89);}
+
+.subset .subset-container-2 svg{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    color: gray;
+    border-radius: 19px 19px;}
+
+.subset .subset-container-2 svg:hover{
+    transition: .5s ease all;
+    color:white;
+    background-color:green;}
+
+.subset-img{
+    
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;}
+
+.subset-img div {
+    cursor: pointer;
+    box-shadow: 0px 0px 1px 1px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+    margin: 0 10px;
+    width: 220px;
+    height: 300px;}
+
+.subset-img img {
+    width: 100%;
+    padding: 25px 20px;}
+
+.subset-img button {
+    border: none;
+    background-color: #084989;
+    color: white;
+    width: 6rem;
+    height: 2rem;
+    font-weight: 700;}
+
+.subset-img div:hover button{
+    transition: .5s ease all;
+    background-color:rgb(56, 234, 56);
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+.subset-img div:hover {
+    transition: .5s ease all;
+    box-shadow: 0px 0px 5px 7px rgba(0,0,0,0.1),0px 10px 15px -3px rgba(0,0,0,0.1);
+}
+
+/*end-subset!!!!!!!!*/
+/*start-for-footer*/
+
+.footer-c{
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.footer-c p {
+    width: 100%;
+    text-align: center;
+}
+
+.footer-c span {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: white;
+}
+
+.footer-co{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+    gap: 5px;
+}
+
+.footer-c .telegram:hover{
+    transition: all .5s ease;
+    background-color: white;
+    color:blue;
+    height: 16px;
+    border-radius:1px;
+}
+
+.footer-c .whatsapp:hover{
+    transition: all .5s ease;
+    background-color: #00b300;
+    color: white;
+    height: 16px;
+    border-radius: 1px;
+}
+
+.footer-c .instagram:hover{
+    transition: all .5s ease;
+    background-color:white;
+    color: red;
+    height: 16px;
+    border-radius: 1px;
+}
+
+.footer{
+    border-top: 1px solid gray;
+    font-size: 1.2rem;
+    padding: 15px 0;
+    width: 100%;
+    background-color: #eee;
+    color: blue;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+/*end-website!!!!!!!!!!!!!!!*/

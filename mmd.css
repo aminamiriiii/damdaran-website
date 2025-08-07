@@ -11,7 +11,7 @@ html{overflow-x: hidden;   }
 a{text-decoration: none;}
 li{list-style-type: none;}
 
-.container nav{
+.container nav {
     position:fixed;
     width:100%;
     display: flex;
@@ -20,7 +20,12 @@ li{list-style-type: none;}
     background-color:#eeeeee8e;
     height: 69px;
     z-index: 1;
-    border-bottom: 1px solid #dbdbdb;}
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.navbar-1 {
+    display: none;
+}
 
 .container nav a {
     padding: 0 20px;
@@ -30,7 +35,7 @@ li{list-style-type: none;}
     color: green;}
 
 
-/* start border for bottom in links!!!!!!!!!!!!!!*/ 
+/* start border for bottom in links!!!!*/ 
 .container nav .m-1:hover:before{
     position:fixed;
     content: "";
@@ -108,8 +113,8 @@ li{list-style-type: none;}
     top: -20px;}
 
 /*end-navbar*/
-/*start-for-history*/
 
+/*start-for-history*/
 
 .history .h-container{
     padding: 0 300px;
@@ -173,7 +178,7 @@ li{list-style-type: none;}
     transition: all .5s ease;}
 
 /*end-for-information!!!!!!!!*/
-
+/*start-product*/
 .product {
     width: 100%;
     display: flex;
@@ -338,3 +343,101 @@ li{list-style-type: none;}
 }
 
 /*end-website!!!!!!!!!!!!!!!*/
+/*start-responsive*/
+
+@media screen and (max-width:600px) {
+    /*start-navbar*/
+    .container .navbar-1 {
+        position: fixed;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding:0 10px;
+        z-index: 1;
+    }
+
+    .container .navbar-1 svg {
+        cursor: pointer;
+        border: 2px solid black;
+        background-color: #ffffff67;
+        margin-top: 20px;
+        color: black;
+        width: 50px;
+        height: 50px;
+    }
+
+    .container .navbar{
+        display:none;
+    }
+
+    /*end navbar*/
+    /*start history*/
+    .history .h-container{
+    
+    direction: ltr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    width:100%;
+    height: 80px;
+    background-color: #084989;}
+
+    /*end history*/
+    .information-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
+    .information-container .information {
+        width: 100%;
+    }
+    .information-container .information h2 {
+        text-align: center;
+        color: #084989;
+    }
+
+    .information-container .information p {
+        width: 250px;
+        text-align: justify;
+        margin: auto;
+    }
+
+    /*end-information*/
+    /*start product*/ 
+    .product {
+        display:flex;
+        flex-wrap: wrap;
+        padding:20px 0;
+        height: 700px;
+    }
+
+    .product button {
+        color:#084989;
+        background-color: #eee;
+    }
+
+    .product  .product-1:hover a{
+        transition: .5s ease all;
+        color: white;
+        background-color: #00b300;
+    }
+
+    .product  .product-2:hover a{
+    transition: .5s ease all;
+    color: white;
+    background-color: #00b300;
+    }
+    /*end-product*/
+    /*start-subset*/
+    .subset-img{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 10px;
+    }
+    /*end-subset*/
+    /*start-footer*/
+    .footer-c{
+        height: 300px;
+    }
+}
